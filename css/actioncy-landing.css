@@ -1,0 +1,61 @@
+.masthead{
+  height: 25em;
+  text-align: center;
+  background-color: green;
+}
+
+.masthead h1.ui.header {
+  margin-top: 1.5em;
+  font-size: 3em;
+}
+
+.masthead h2 {
+  margin-top: 0.5em;
+  font-size: 2em;
+}
+
+.logo {
+  width: 35%;
+  height: 35%;
+}
+
+.main.menu {
+  padding: .5em;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  transition:
+    box-shadow 0.5s ease,
+    padding 0.5s ease
+  ;
+}
+.main.menu .item img.logo {
+  margin-right: 1.5em;
+}
+
+.overlay {
+  float: left;
+  margin: 1em 3em 0em 0em;
+}
+.overlay .menu {
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease;
+}
+
+.main.menu.fixed {
+  background-color: #FFFFFF;
+  border: 1px solid #DDD;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.overlay.fixed .menu {
+  left: 800px;
+}
+
+#register {
+  background-color: lightgrey;
+}
+
+.overview {
+  padding: 4em 0 4em 0;
+}
