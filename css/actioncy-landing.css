@@ -1,28 +1,13 @@
-.masthead{
-  text-align: center;
-}
 
-.masthead .logo {
-  padding-top: 1.5em;
-  width: 250px;
-}
-
-.masthead h1.ui.header {
-  font-size: 2em;
-}
-
-.masthead .mockshot {
-  margin-top: .4em;
-}
-
-
-.logo {
-  width: 35%;
-  height: 35%;
+nav .logo {
+  height: 2.5em;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-17%);
+  transform: translateY(17%);
 }
 
 .main.menu {
-  display:none;
   padding: .3em;
   border-radius: 0;
   border: none;
@@ -32,6 +17,7 @@
     padding 0.5s ease
   ;
 }
+
 .main.menu .item img.logo {
   margin-right: 1.5em;
 }
@@ -55,11 +41,43 @@
   left: 800px;
 }
 
+.masthead{
+  text-align: center;
+}
+
+.masthead .logo {
+  padding-top: 1.5em;
+  width: 250px;
+}
+
+.masthead h1.ui.header {
+  font-size: 2em;
+}
+
+.masthead .mockshot {
+  margin-top: .4em;
+}
+
+
+.masthead.logo {
+  height: 3em;
+}
+
+
 .overview {
   padding: 2em 0 2em 0;
-  /*min-height: 332px;*/
 }
 
 footer {
-  margin-top: 4em !important;
+  margin-top: 6em !important;
+}
+
+/*-------tools---------*/
+
+.vert-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

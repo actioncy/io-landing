@@ -1,19 +1,27 @@
 $(document).ready(function() {
 
-  $('nav').visibility({
-    onTopPassed: function() {
-      var navigationHTML = "<div class=\"ui borderless main menu\"><div class=\"ui text container\"><img class=\"logo\" src=\"img/actioncy-io-logo.png\"><button class=\"ui primary basic button right floated item\">Sign Up</button></div></div>";
-      $('nav').append(navigationHTML);
-    }
+  $('#mastheadCTA').visibility({
+    once: false,
+    onOnScreen: function() {
+      $('nav').hide();
+    },
+    onOffScreen: function() {
+      $('nav').show();
+    },
   });
 
-  $('.main.menu').visibility({
-    type: 'fixed',
-  });
 
-  $('.overlay').visibility({
-    type: 'fixed',
-    offset: 80
-  });
+  $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 400, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 
 });
