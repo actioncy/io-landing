@@ -14,10 +14,25 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
     <link rel="stylesheet" href="css/actioncy-landing.css" charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
-    <script src="js/actioncy-landing.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-72163322-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 
 </head>
@@ -158,29 +173,34 @@
         </div>
     </section>
 
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
-    <script>
-    function showMailingPopUp() {
-      require(["mojo/signup-forms/Loader"], function(L) {
-          L.start({
-              "baseUrl": "mc.us13.list-manage.com",
-              "uuid": "17cf5c7436e7904ce1f70f082",
-              "lid": "b23ba27fbc"
-          })
-      });
-      document.cookie = "MCEvilPopupClosed=; expires=Thu, 30 Apr 1970 00:00:00 UTC";
-    };
-
-    document.getElementById("navigationCTA").onclick = function() {showMailingPopUp()};
-    document.getElementById("mastheadCTA").onclick = function() {showMailingPopUp()};
-
-    </script>
-
     <footer class="ui inverted vertical footer segment center aligned">
         <p><strong>I'm the proud footer.</strong>
             <br> All centered and things.</p>
     </footer>
+
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script>
+        function showMailingPopUp() {
+            require(["mojo/signup-forms/Loader"], function(L) {
+                L.start({
+                    "baseUrl": "mc.us13.list-manage.com",
+                    "uuid": "17cf5c7436e7904ce1f70f082",
+                    "lid": "b23ba27fbc"
+                })
+            });
+            document.cookie = "MCEvilPopupClosed=; expires=Thu, 30 Apr 1970 00:00:00 UTC";
+        };
+
+        document.getElementById("navigationCTA").onclick = function() {
+            showMailingPopUp()
+        };
+        document.getElementById("mastheadCTA").onclick = function() {
+            showMailingPopUp()
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+    <script src="js/actioncy-landing.js"></script>
 
 </body>
 
