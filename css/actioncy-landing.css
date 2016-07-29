@@ -1,13 +1,11 @@
 
-nav .logo {
-  height: 2.5em;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-17%);
-  transform: translateY(17%);
+.divider.xl {
+  margin: 2em 0;
 }
 
+
 .main.menu {
+  height: 4em;
   padding: .3em;
   border-radius: 0;
   border: none;
@@ -16,10 +14,6 @@ nav .logo {
     box-shadow 0.5s ease,
     padding 0.5s ease
   ;
-}
-
-.main.menu .item img.logo {
-  margin-right: 1.5em;
 }
 
 .overlay {
@@ -41,8 +35,7 @@ nav .logo {
   left: 800px;
 }
 
-.masthead{
-  text-align: center;
+.valueProp {
 }
 
 .masthead .logo {
@@ -50,21 +43,12 @@ nav .logo {
   width: 250px;
 }
 
-.masthead h1.ui.header {
-  font-size: 2em;
-}
-
 .masthead .mockshot {
   margin-top: .4em;
 }
 
-
-.masthead.logo {
-  height: 3em;
-}
-
-
 .overview {
+  color: grey;
   padding: 2em 0 2em 0;
 }
 
@@ -74,14 +58,4 @@ footer {
 
 .thankYou {
   margin-top: 10em !important;
-}
-
-/*-------tools---------*/
-
-.vert-middle {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
