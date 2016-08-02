@@ -16,6 +16,14 @@
   ;
 }
 
+.actioncyBlue {
+  color: #378dcc !important;
+}
+
+.actioncyRed {
+  color: #ae0027 !important;
+}
+
 .overlay {
   float: left;
   margin: 1em 3em 0em 0em;
