@@ -69,5 +69,10 @@ footer {
 }
 
 .thankYou {
-  margin-top: 10em !important;
+  margin-top: 2em !important;
+}
+
+.thankYou .segment {
+  padding-left: 4em !important;
+  padding-right: 4em !important;
 }
