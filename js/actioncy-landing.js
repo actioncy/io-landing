@@ -1,27 +1,34 @@
 $(document).ready(function() {
 
-    $('#mastheadCTA').visibility({
-        once: false,
-        onOnScreen: function() {
-            $('nav').hide();
-        },
-        onOffScreen: function() {
-            $('nav').show();
-        },
+// Menu Control Overlay
+  $('#mastheadCTA').visibility({
+    once: false,
+    onOnScreen: function() {
+      $('nav').hide();
+    },
+    onOffScreen: function() {
+      $('nav').show();
+    },
+  });
+
+//Mailchimp sign-up overlay
+  $('button').on('click', function() {
+    $('.ui.modal').modal('show');
+  });
+
+  $('#mc-embedded-subscribe-form')
+    .form({
+      fields: {
+        email: {
+          identifier: 'mce-EMAIL',
+          rules: [
+            {
+              type   : 'email',
+              prompt : 'Please enter a valid email address. Thank you.'
+            }
+          ]
+        }
+      }
     });
 
-
-    $('a[href^="#"]').on('click', function(e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 400, 'swing', function() {
-            window.location.hash = target;
-        });
-    });
-    
 });
