@@ -4,6 +4,10 @@
 ### Actioncy ###
 _WIP-files
 
+###mac###
+.DS_Store
+
+
 ### Node ###
 # Logs
 logs
